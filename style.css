@@ -1,0 +1,142 @@
+/* Gaya umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    margin: 0;
+    padding: 50px 0; /* Tambahkan padding di atas dan bawah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 1s ease-in-out;
+    box-sizing: border-box; /* Tambahkan ini untuk menghindari overflow */
+}
+
+/* Container */
+.container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 700px;
+    width: 200;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1.2s ease-in-out;
+    margin-top: 500px; /* Tambahkan margin atas */
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gaya untuk judul */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Background gradient pada judul */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #ff6ec4);
+    margin: 8px auto 15px;
+    border-radius: 2px;
+}
+
+/* Gaya paragraf */
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Gaya gambar profil */
+.profile-image {
+    display: block;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efek hover pada gambar profil */
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk bagian Projects */
+.projects {
+    margin-bottom: 20px;
+}
+
+.project-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #ff6ec4;
+}
+
+.project-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Gaya untuk bagian Contact */
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #ff6ec4;
+    text-decoration: underline;
+}
+
+/* Efek animasi halus pada background */
+@keyframes backgroundAnimate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: backgroundAnimate 10s ease infinite;
+}
+
+
+
+
+
+
+
+
